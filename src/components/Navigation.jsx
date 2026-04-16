@@ -6,7 +6,7 @@ import {
   Sparkles, BarChart3, Users, Building2, 
   Menu, X, ChevronDown, Zap, 
   DollarSign, Info, Briefcase,
-  Phone
+  Phone, HelpCircle
 } from 'lucide-react'
 
 const modules = [
@@ -23,6 +23,7 @@ const modules = [
   { id: 'about', name: 'À propos', icon: Info, path: '/about' },
   { id: 'careers', name: 'Carrières', icon: Briefcase, path: '/careers' },
   { id: 'contact', name: 'Contact', icon: Phone, path: '/contact' },
+  { id: 'faq', name: 'FAQ', icon: HelpCircle, path: '/faq' },
 ] 
 
 const sectors = [

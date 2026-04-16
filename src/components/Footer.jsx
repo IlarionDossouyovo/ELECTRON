@@ -25,8 +25,7 @@ export default function Footer() {
   const company = [
     { name: 'À propos', path: '/about' },
     { name: 'Carrières', path: '/careers' },
-    { name: 'Blog', path: '/blog' },
-    { name: 'Presse', path: '/press' },
+    { name: 'FAQ', path: '/faq' },
     { name: 'Contact', path: '/contact' },
   ]
 

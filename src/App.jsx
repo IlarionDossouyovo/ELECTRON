@@ -18,6 +18,7 @@ import Pricing from './pages/Pricing'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Careers from './pages/Careers'
+import FAQ from './pages/FAQ'
 
 // Sector Pages
 import SectorPage from './pages/SectorPage'
@@ -43,6 +44,7 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/careers" element={<Careers />} />
+          <Route path="/faq" element={<FAQ />} />
           
           {/* Sector Pages */}
           <Route path="/sector/:sector" element={<SectorPage />} />
