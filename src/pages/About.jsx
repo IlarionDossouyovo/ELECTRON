@@ -9,9 +9,7 @@ const stats = [
 ]
 
 const team = [
-  { name: 'ILARION DOSSOUYOVO', role: 'CEO & Fondateur', avatar: '👨‍💼', bio: 'Expert en systèmes d\'information et solutions numériques' },
-  // Ajoutez vos vrais collaborateurs ici :
-  // { name: 'Prénom Nom', role: 'Directeur(trice)', avatar: '👤', bio: 'Votre bio professionnelle' },
+  { name: 'DOSSOU-YOVO ATTIOGBE Y.A. Ilarion', role: 'CEO & Fondateur', avatar: '👨‍💼', bio: 'Expert en systèmes d\'information et solutions numériques' },
 ]
 
 const values = [

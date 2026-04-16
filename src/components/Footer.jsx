@@ -66,7 +66,7 @@ export default function Footer() {
             <div className="space-y-3 text-sm">
               <div className="flex items-center text-slate-400">
                 <Mail className="w-4 h-4 mr-3 text-cyan-400" />
-                <span>contact@electron.app</span>
+                <span>electronbusiness07@gmail.com</span>
               </div>
               <div className="flex items-center text-slate-400">
                 <Phone className="w-4 h-4 mr-3 text-cyan-400" />

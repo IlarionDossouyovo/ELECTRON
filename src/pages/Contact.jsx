@@ -58,14 +58,14 @@ export default function ContactPageNew() {
                     <Mail className="w-6 h-6 text-cyan-400 mr-4" />
                     <div>
                       <p className="text-white font-medium">Email</p>
-                      <p className="text-slate-400">contact@electron.africa</p>
+                      <p className="text-slate-400">electronbusiness07@gmail.com</p>
                     </div>
                   </div>
                   <div className="flex items-center">
                     <Phone className="w-6 h-6 text-cyan-400 mr-4" />
                     <div>
                       <p className="text-white font-medium">Téléphone</p>
-                      <p className="text-slate-400">+229 00 00 00 00</p>
+                      <p className="text-slate-400">+229 01 977 003 47 / 01 498 022 02</p>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -139,7 +139,7 @@ export default function ContactPageNew() {
                         value={form.phone}
                         onChange={(e) => setForm({...form, phone: e.target.value})}
                         className="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white focus:border-cyan-500 focus:outline-none"
-                        placeholder="+229 00 00 00 00"
+                        placeholder="+229 01 977 003 47"
                       />
                     </div>
                     <div>
