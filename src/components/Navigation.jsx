@@ -4,7 +4,9 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { 
   ShoppingCart, Truck, Package, CreditCard, 
   Sparkles, BarChart3, Users, Building2, 
-  Menu, X, ChevronDown, Zap
+  Menu, X, ChevronDown, Zap, 
+  DollarSign, Info, Briefcase,
+  Phone
 } from 'lucide-react'
 
 const modules = [
@@ -18,7 +20,10 @@ const modules = [
   { id: 'industry', name: 'Industrie & Distribution', icon: Building2, path: '/industry' },
   { id: 'ngo', name: 'ONG & Humanitaire', icon: Package, path: '/ngo' },
   { id: 'pricing', name: 'Tarifs', icon: DollarSign, path: '/pricing' },
-]
+  { id: 'about', name: 'À propos', icon: Info, path: '/about' },
+  { id: 'careers', name: 'Carrières', icon: Briefcase, path: '/careers' },
+  { id: 'contact', name: 'Contact', icon: Phone, path: '/contact' },
+] 
 
 const sectors = [
   { id: 'retail', name: 'Retail & Mode', target: '/sector/retail' },
