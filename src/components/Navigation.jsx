@@ -17,6 +17,7 @@ const modules = [
   { id: 'recruitment', name: 'Recrutement & RH', icon: Users, path: '/recruitment' },
   { id: 'industry', name: 'Industrie & Distribution', icon: Building2, path: '/industry' },
   { id: 'ngo', name: 'ONG & Humanitaire', icon: Package, path: '/ngo' },
+  { id: 'pricing', name: 'Tarifs', icon: DollarSign, path: '/pricing' },
 ]
 
 const sectors = [
