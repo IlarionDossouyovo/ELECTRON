@@ -13,6 +13,7 @@ import Recruitment from './pages/Recruitment'
 import Industry from './pages/Industry'
 import NGO from './pages/NGO'
 import Services from './pages/Services'
+import ElectronPay from './pages/ElectronPay'
 
 // Sector Pages
 import SectorPage from './pages/SectorPage'
@@ -33,6 +34,7 @@ export default function App() {
           <Route path="/industry" element={<Industry />} />
           <Route path="/ngo" element={<NGO />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/electron-pay" element={<ElectronPay />} />
           <Route path="/sector/:sector" element={<SectorPage />} />
           
           {/* Placeholder routes */}

@@ -11,7 +11,7 @@ const modules = [
   { id: 'services', name: 'Nos Services', icon: Package, path: '/services' },
   { id: 'ecommerce', name: 'E-commerce & Marketplace', icon: ShoppingCart, path: '/ecommerce' },
   { id: 'logistics', name: 'Transport & Logistique', icon: Truck, path: '/logistics' },
-  { id: 'payments', name: 'Paiement Global', icon: CreditCard, path: '/payments' },
+  { id: 'payments', name: 'Electron Pay', icon: CreditCard, path: '/electron-pay' },
   { id: 'ai', name: 'Intelligence Artificielle', icon: Sparkles, path: '/ai' },
   { id: 'analytics', name: 'Analyse & KPIs', icon: BarChart3, path: '/analytics' },
   { id: 'recruitment', name: 'Recrutement & RH', icon: Users, path: '/recruitment' },
