@@ -8,6 +8,7 @@ import {
 } from 'lucide-react'
 
 const modules = [
+  { id: 'services', name: 'Nos Services', icon: Package, path: '/services' },
   { id: 'ecommerce', name: 'E-commerce & Marketplace', icon: ShoppingCart, path: '/ecommerce' },
   { id: 'logistics', name: 'Transport & Logistique', icon: Truck, path: '/logistics' },
   { id: 'payments', name: 'Paiement Global', icon: CreditCard, path: '/payments' },
