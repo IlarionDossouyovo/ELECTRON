@@ -1,0 +1,50 @@
+{
+  "name": "ELECTRON - Surveillance GitHub",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [{"field": "hours", "hoursInterval": 1}]
+        }
+      },
+      "id": "github-schedule",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2Api",
+        "repository": "IlarionDossouyovo/ELECTRON",
+        "options": {}
+      },
+      "id": "github-commits",
+      "name": "Get Commits",
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "to": "electronbusiness07@gmail.com",
+        "subject": "ELECTRON - Nouveaux commits GitHub",
+        "body": "Il y a {{$json.length}} nouveaux commits",
+        "options": {}
+      },
+      "id": "send-email",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 1,
+      "position": [650, 300]
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": {
+      "main": [[{"node": "Get Commits", "type": "main", "index": 0}]]
+    },
+    "Get Commits": {
+      "main": [[{"node": "Send Email", "type": "main", "index": 0}]]
+    }
+  }
+}

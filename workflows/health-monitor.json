@@ -1,0 +1,67 @@
+{
+  "name": "ELECTRON - Monitoring Santé",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [{"field": "minutes", "minutesInterval": 5}]
+        }
+      },
+      "id": "monitor-trigger",
+      "name": "Every 5 Minutes",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "url": "https://electron.africa/health",
+        "options": {
+          "method": "GET",
+          "timeout": 5000
+        }
+      },
+      "id": "health-check",
+      "name": "Health Check",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "to": "electronbusiness07@gmail.com",
+        "subject": "⚠️ ALERTE - ELECTRON Down",
+        "body": "Le site ELECTRON ne répond pas!",
+        "options": {}
+      },
+      "id": "alert-email",
+      "name": "Alert Email",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 1,
+      "position": [650, 300]
+    },
+    {
+      "parameters": {
+        "channel": "alerts",
+        "text": "⚠️ ALERTE: ELECTRON hors ligne!",
+        "options": {}
+      },
+      "id": "slack-alert",
+      "name": "Slack Alert",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 1,
+      "position": [650, 450]
+    }
+  ],
+  "connections": {
+    "Every 5 Minutes": {
+      "main": [[{"node": "Health Check", "type": "main", "index": 0}]]
+    },
+    "Health Check": {
+      "main": [
+        [{"node": "Alert Email", "type": "main", "index": 0}],
+        [{"node": "Slack Alert", "type": "main", "index": 0}]
+      ]
+    }
+  }
+}

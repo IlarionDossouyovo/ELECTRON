@@ -1,0 +1,56 @@
+version: '3.8'
+
+services:
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: electron_n8n
+    restart: unless-stopped
+    ports:
+      - "5678:5678"
+    environment:
+      - N8N_BASIC_AUTH_ACTIVE=true
+      - N8N_BASIC_AUTH_USER=admin
+      - N8N_BASIC_AUTH_PASSWORD=electron2024
+      - N8N_HOST=n8n.electron.africa
+      - N8N_PROTOCOL=http
+      - N8N_PORT=5678
+      - WEBHOOK_URL=http://localhost:5678
+      - GENERIC_TIMEZONE=Africa/Porto-Novo
+      - EXECUTIONS_DATA_SAVE_ON_ERROR=all
+      - EXECUTIONS_DATA_SAVE_ON_SUCCESS=all
+      - EXECUTIONS_DATA_SAVE_ON_PROGRESS=all
+      - EXECUTIONS_DATA_SAVEManual_EXECUTIONS=true
+    volumes:
+      - n8n_data:/home/node/.n8n
+    networks:
+      - electron_network
+
+  # Database pour ELECTRON
+  postgres:
+    image: postgres:15-alpine
+    container_name: electron_postgres
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=electron
+      - POSTGRES_USER=electron
+      - POSTGRES_PASSWORD=electron_secure_2024
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - electron_network
+
+  # Redis pour les queues
+  redis:
+    image: redis:7-alpine
+    container_name: electron_redis
+    restart: unless-stopped
+    networks:
+      - electron_network
+
+volumes:
+  n8n_data:
+  postgres_data:
+
+networks:
+  electron_network:
+    driver: bridge

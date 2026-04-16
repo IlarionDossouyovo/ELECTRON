@@ -1,0 +1,51 @@
+{
+  "name": "ELECTRON - Backup Automatique",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [{"field": "hours", "hoursInterval": 24}]
+        }
+      },
+      "id": "daily-trigger",
+      "name": "Daily Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "url": "https://api.github.com/repos/IlarionDossouyovo/ELECTRON",
+        "options": {
+          "method": "GET"
+        }
+      },
+      "id": "get-repo",
+      "name": "Get Repo Info",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "to": "electronbusiness07@gmail.com",
+        "subject": "ELECTRON - Sauvegarde quotidienne",
+        "body": "Sauvegarde effectuée. Stats: {{$json.stargazers_count}} stars, {{$json.forks_count}} forks",
+        "options": {}
+      },
+      "id": "notify",
+      "name": "Notify",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 1,
+      "position": [650, 300]
+    }
+  ],
+  "connections": {
+    "Daily Trigger": {
+      "main": [[{"node": "Get Repo Info", "type": "main", "index": 0}]]
+    },
+    "Get Repo Info": {
+      "main": [[{"node": "Notify", "type": "main", "index": 0}]]
+    }
+  }
+}
