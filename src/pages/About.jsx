@@ -3,23 +3,22 @@ import { Users, Globe, Shield, Zap, Award,TrendingUp, MapPin, Calendar, Mail, Ph
 
 const stats = [
   { value: '2019', label: 'Année de création' },
-  { value: '150+', label: 'Pays couverts' },
-  { value: '10K+', label: 'Entreprises' },
-  { value: '50M+', label: 'Transactions/an' },
+  { value: '30+', label: 'Pays couverts' },
+  { value: '500+', label: 'Entreprises' },
+  { value: '2M+', label: 'Transactions/an' },
 ]
 
 const team = [
-  { name: 'Ilarion DOSSOUYOVO', role: 'CEO & Fondateur', avatar: '👨‍💼', bio: 'Visionnaire Tech, 10+ années dans la fintech' },
-  { name: 'Dr. Awa K.', role: 'Directrice IA', avatar: '👩‍🔬', bio: 'PhD AI, ex-Google DeepMind' },
-  { name: 'Jean-Marc K.', role: ' CTO', avatar: '👨‍💻', bio: 'Architecte systèmes, ex-Meta' },
-  { name: 'Fatou S.', role: 'COO', avatar: '👩‍💼', bio: 'Expert logistique, Afrique de l\'Ouest' },
+  { name: 'ILARION DOSSOUYOVO', role: 'CEO & Fondateur', avatar: '👨‍💼', bio: 'Expert en systèmes d\'information et solutions numériques' },
+  // Ajoutez vos vrais collaborateurs ici :
+  // { name: 'Prénom Nom', role: 'Directeur(trice)', avatar: '👤', bio: 'Votre bio professionnelle' },
 ]
 
 const values = [
-  { icon: Shield, title: 'Sécurité', desc: 'Vos données et paiements protégées par les meilleurs standards' },
-  { icon: Globe, title: 'Inclusion', desc: 'Accessibilité pour tous, partout en Afrique et dans le monde' },
-  { icon: Zap, title: 'Innovation', desc: 'Technologies de pointe pour vous Ahead' },
-  { icon: TrendingUp, title: 'Croissance', desc: 'Votre succès est notre priorité' },
+  { icon: Shield, title: 'Sécurité', desc: 'Protection des données et paiements avec standards internationaux' },
+  { icon: Globe, title: 'Inclusion', desc: 'Accessibilité pour tous, partout en Afrique' },
+  { icon: Zap, title: 'Innovation', desc: 'Technologies de pointe continues' },
+  { icon: TrendingUp, title: 'Croissance', desc: 'Votre succès = notre priorité' },
 ]
 
 const partners = [
@@ -29,8 +28,6 @@ const partners = [
   { name: 'Stripe', logo: '💳' },
   { name: 'Visa', logo: '💳' },
   { name: 'Mastercard', logo: '💳' },
-  { name: 'Google', logo: '🔍' },
-  { name: 'AWS', logo: '☁️' },
 ]
 
 export default function About() {
