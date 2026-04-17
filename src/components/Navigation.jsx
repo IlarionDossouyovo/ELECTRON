@@ -6,9 +6,10 @@ import {
   Sparkles, BarChart3, Users, Building2, 
   Menu, X, ChevronDown, Zap, 
   DollarSign, Info, Briefcase,
-  Phone, HelpCircle
+  Phone, HelpCircle, LayoutDashboard,
+  Code, Download,
+  Settings
 } from 'lucide-react'
-
 const modules = [
   { id: 'services', name: 'Nos Services', icon: Package, path: '/services' },
   { id: 'ecommerce', name: 'E-commerce & Marketplace', icon: ShoppingCart, path: '/ecommerce' },
@@ -24,8 +25,12 @@ const modules = [
   { id: 'careers', name: 'Carrières', icon: Briefcase, path: '/careers' },
   { id: 'contact', name: 'Contact', icon: Phone, path: '/contact' },
   { id: 'faq', name: 'FAQ', icon: HelpCircle, path: '/faq' },
+  { id: 'login', name: 'Connexion', icon: Zap, path: '/login' },
+  { id: 'dashboard', name: 'Dashboard', icon: LayoutDashboard, path: '/dashboard' },
+  { id: 'api', name: 'API', icon: Code, path: '/api' },
+  { id: 'mobile', name: 'Mobile', icon: Download, path: '/mobile' },
+  { id: 'settings', name: 'Paramètres', icon: Settings, path: '/settings' },
 ] 
-
 const sectors = [
   { id: 'retail', name: 'Retail & Mode', target: '/sector/retail' },
   { id: 'industry', name: 'Industrie & Distribution', target: '/sector/industry' },
@@ -34,13 +39,11 @@ const sectors = [
   { id: 'public', name: 'Secteur Public', target: '/sector/public' },
   { id: 'ong', name: 'ONG & International', target: '/sector/ong' },
 ]
-
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
   const [showModules, setShowModules] = useState(false)
   const [showSectors, setShowSectors] = useState(false)
   const location = useLocation()
-
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 glass-effect bg-slate-900/90 border-b border-slate-700/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -52,7 +55,6 @@ export default function Navigation() {
             </div>
             <span className="text-xl font-bold gradient-text hidden sm:block">ELECTRON</span>
           </Link>
-
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">
             {/* Modules Dropdown */}
@@ -90,7 +92,6 @@ export default function Navigation() {
                 )}
               </AnimatePresence>
             </div>
-
             {/* Sectors Dropdown */}
             <div className="relative">
               <button 
@@ -125,7 +126,6 @@ export default function Navigation() {
                 )}
               </AnimatePresence>
             </div>
-
             <Link to="/pricing" className="px-4 py-2 text-slate-300 hover:text-white hover:bg-slate-800/50 rounded-lg transition-colors">
               Tarifs
             </Link>
@@ -133,7 +133,6 @@ export default function Navigation() {
               Contact
             </Link>
           </div>
-
           {/* CTA Button */}
           <div className="hidden md:flex items-center space-x-3">
             <Link to="/demo" className="px-4 py-2 text-cyan-400 hover:text-cyan-300 transition-colors">
@@ -143,7 +142,6 @@ export default function Navigation() {
               Commencer
             </Link>
           </div>
-
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -153,7 +151,6 @@ export default function Navigation() {
           </button>
         </div>
       </div>
-
       {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (

@@ -19,6 +19,10 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Careers from './pages/Careers'
 import FAQ from './pages/FAQ'
+import Login from './pages/Login'
+import Dashboard from './pages/Dashboard'
+import Mobile from './pages/Mobile'
+import SettingsPage from './pages/SettingsPage'
 
 // Sector Pages
 import SectorPage from './pages/SectorPage'
@@ -45,6 +49,10 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/mobile" element={<Mobile />} />
+          <Route path="/settings" element={<SettingsPage />} />
           
           {/* Sector Pages */}
           <Route path="/sector/:sector" element={<SectorPage />} />
