@@ -8,7 +8,9 @@ import {
   DollarSign, Info, Briefcase,
   Phone, HelpCircle, LayoutDashboard,
   Code, Download,
-  Settings
+  Settings,
+  FileText,
+  Webhook
 } from 'lucide-react'
 const modules = [
   { id: 'services', name: 'Nos Services', icon: Package, path: '/services' },
@@ -40,6 +42,8 @@ const modules = [
   { id: 'inventory', name: 'Inventaire', icon: Package, path: '/inventory' },
   { id: 'checkout', name: 'Checkout', icon: CreditCard, path: '/checkout' },
   { id: 'payment-gateway', name: 'Paiements', icon: CreditCard, path: '/payment-gateway' },
+  { id: 'blog', name: 'Blog', icon: FileText, path: '/blog' },
+  { id: 'webhooks', name: 'Webhooks', icon: Webhook, path: '/webhooks' },
 ] 
 const sectors = [
   { id: 'retail', name: 'Retail & Mode', target: '/sector/retail' },

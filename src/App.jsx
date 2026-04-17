@@ -36,6 +36,8 @@ import Orders from './pages/Orders'
 import Inventory from './pages/Inventory'
 import Checkout from './pages/Checkout'
 import PaymentGateway from './pages/PaymentGateway'
+import Blog from './pages/Blog'
+import Webhooks from './pages/Webhooks'
 
 export default function App() {
   return (
@@ -73,6 +75,8 @@ export default function App() {
           <Route path="/inventory" element={<Inventory />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/payment-gateway" element={<PaymentGateway />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/webhooks" element={<Webhooks />} />
           
           {/* Sector Pages */}
           <Route path="/sector/:sector" element={<SectorPage />} />
