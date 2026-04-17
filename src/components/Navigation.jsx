@@ -47,6 +47,7 @@ const modules = [
   { id: 'reports', name: 'Rapports', icon: FileText, path: '/reports' },
   { id: 'employees', name: 'Employés', icon: Users, path: '/employees' },
   { id: 'suppliers', name: 'Fournisseurs', icon: Package, path: '/suppliers' },
+  { id: 'i18n', name: 'International', icon: Globe, path: '/i18n' },
 ] 
 const sectors = [
   { id: 'retail', name: 'Retail & Mode', target: '/sector/retail' },

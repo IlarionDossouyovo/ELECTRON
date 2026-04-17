@@ -41,6 +41,7 @@ import Webhooks from './pages/Webhooks'
 import Reports from './pages/Reports'
 import Employees from './pages/Employees'
 import Suppliers from './pages/Suppliers'
+import i18nConfig from './pages/i18nConfig'
 
 export default function App() {
   return (
@@ -83,6 +84,7 @@ export default function App() {
           <Route path="/reports" element={<Reports />} />
           <Route path="/employees" element={<Employees />} />
           <Route path="/suppliers" element={<Suppliers />} />
+          <Route path="/i18n" element={<i18nConfig />} />
           
           {/* Sector Pages */}
           <Route path="/sector/:sector" element={<SectorPage />} />
