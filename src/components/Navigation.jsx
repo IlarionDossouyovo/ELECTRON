@@ -44,6 +44,9 @@ const modules = [
   { id: 'payment-gateway', name: 'Paiements', icon: CreditCard, path: '/payment-gateway' },
   { id: 'blog', name: 'Blog', icon: FileText, path: '/blog' },
   { id: 'webhooks', name: 'Webhooks', icon: Webhook, path: '/webhooks' },
+  { id: 'reports', name: 'Rapports', icon: FileText, path: '/reports' },
+  { id: 'employees', name: 'Employés', icon: Users, path: '/employees' },
+  { id: 'suppliers', name: 'Fournisseurs', icon: Package, path: '/suppliers' },
 ] 
 const sectors = [
   { id: 'retail', name: 'Retail & Mode', target: '/sector/retail' },
