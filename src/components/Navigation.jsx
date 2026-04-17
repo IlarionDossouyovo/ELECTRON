@@ -30,6 +30,12 @@ const modules = [
   { id: 'api', name: 'API', icon: Code, path: '/api' },
   { id: 'mobile', name: 'Mobile', icon: Download, path: '/mobile' },
   { id: 'settings', name: 'Paramètres', icon: Settings, path: '/settings' },
+  { id: 'users', name: 'Utilisateurs', icon: Users, path: '/users' },
+  { id: 'cart', name: 'Panier', icon: ShoppingCart, path: '/cart' },
+  { id: 'crm', name: 'CRM', icon: Users, path: '/crm' },
+  { id: 'ai-services', name: 'IA Services', icon: Sparkles, path: '/ai-services' },
+  { id: 'admin', name: 'Admin', icon: Settings, path: '/admin' },
+  { id: 'notifications', name: 'Notifications', icon: Bell, path: '/notifications' },
 ] 
 const sectors = [
   { id: 'retail', name: 'Retail & Mode', target: '/sector/retail' },

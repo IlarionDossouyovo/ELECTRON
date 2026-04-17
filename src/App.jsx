@@ -26,6 +26,12 @@ import SettingsPage from './pages/SettingsPage'
 
 // Sector Pages
 import SectorPage from './pages/SectorPage'
+import Users from './pages/Users'
+import Cart from './pages/Cart'
+import CRM from './pages/CRM'
+import AIServices from './pages/AIServices'
+import Admin from './pages/Admin'
+import Notifications from './pages/Notifications'
 
 export default function App() {
   return (
@@ -53,6 +59,12 @@ export default function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/mobile" element={<Mobile />} />
           <Route path="/settings" element={<SettingsPage />} />
+          <Route path="/users" element={<Users />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/crm" element={<CRM />} />
+          <Route path="/ai-services" element={<AIServices />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/notifications" element={<Notifications />} />
           
           {/* Sector Pages */}
           <Route path="/sector/:sector" element={<SectorPage />} />
