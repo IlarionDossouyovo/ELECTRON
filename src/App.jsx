@@ -45,6 +45,8 @@ import i18nConfig from './pages/i18nConfig'
 import ThemeCustomization from './pages/ThemeCustomization'
 import EmailTemplates from './pages/EmailTemplates'
 import InvoiceGenerator from './pages/InvoiceGenerator'
+import APIDocumentation from './pages/APIDocumentation'
+import Messaging from './pages/Messaging'
 
 export default function App() {
   return (
@@ -91,6 +93,8 @@ export default function App() {
           <Route path="/theme" element={<ThemeCustomization />} />
           <Route path="/emails" element={<EmailTemplates />} />
           <Route path="/invoices" element={<InvoiceGenerator />} />
+          <Route path="/api-docs" element={<APIDocumentation />} />
+          <Route path="/messages" element={<Messaging />} />
           
           {/* Sector Pages */}
           <Route path="/sector/:sector" element={<SectorPage />} />

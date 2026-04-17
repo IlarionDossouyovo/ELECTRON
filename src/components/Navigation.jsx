@@ -7,7 +7,7 @@ import {
   Menu, X, ChevronDown, Zap, 
   DollarSign, Info, Briefcase,
   Phone, HelpCircle, LayoutDashboard,
-  Code, Download, Palette, Mail,
+  Code, Download, Palette, Mail, Book, MessageCircle,
   Settings,
   FileText,
   Webhook
@@ -51,6 +51,8 @@ const modules = [
   { id: 'theme', name: 'Thème', icon: Palette, path: '/theme' },
   { id: 'emails', name: 'Emails', icon: Mail, path: '/emails' },
   { id: 'invoices', name: 'Factures', icon: FileText, path: '/invoices' },
+  { id: 'api-docs', name: 'API Docs', icon: Book, path: '/api-docs' },
+  { id: 'messages', name: 'Messages', icon: MessageCircle, path: '/messages' },
 ] 
 const sectors = [
   { id: 'retail', name: 'Retail & Mode', target: '/sector/retail' },
