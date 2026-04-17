@@ -7,7 +7,7 @@ import {
   Menu, X, ChevronDown, Zap, 
   DollarSign, Info, Briefcase,
   Phone, HelpCircle, LayoutDashboard,
-  Code, Download,
+  Code, Download, Palette, Mail,
   Settings,
   FileText,
   Webhook
@@ -48,6 +48,9 @@ const modules = [
   { id: 'employees', name: 'Employés', icon: Users, path: '/employees' },
   { id: 'suppliers', name: 'Fournisseurs', icon: Package, path: '/suppliers' },
   { id: 'i18n', name: 'International', icon: Globe, path: '/i18n' },
+  { id: 'theme', name: 'Thème', icon: Palette, path: '/theme' },
+  { id: 'emails', name: 'Emails', icon: Mail, path: '/emails' },
+  { id: 'invoices', name: 'Factures', icon: FileText, path: '/invoices' },
 ] 
 const sectors = [
   { id: 'retail', name: 'Retail & Mode', target: '/sector/retail' },

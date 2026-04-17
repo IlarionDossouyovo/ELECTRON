@@ -42,6 +42,9 @@ import Reports from './pages/Reports'
 import Employees from './pages/Employees'
 import Suppliers from './pages/Suppliers'
 import i18nConfig from './pages/i18nConfig'
+import ThemeCustomization from './pages/ThemeCustomization'
+import EmailTemplates from './pages/EmailTemplates'
+import InvoiceGenerator from './pages/InvoiceGenerator'
 
 export default function App() {
   return (
@@ -85,6 +88,9 @@ export default function App() {
           <Route path="/employees" element={<Employees />} />
           <Route path="/suppliers" element={<Suppliers />} />
           <Route path="/i18n" element={<i18nConfig />} />
+          <Route path="/theme" element={<ThemeCustomization />} />
+          <Route path="/emails" element={<EmailTemplates />} />
+          <Route path="/invoices" element={<InvoiceGenerator />} />
           
           {/* Sector Pages */}
           <Route path="/sector/:sector" element={<SectorPage />} />
