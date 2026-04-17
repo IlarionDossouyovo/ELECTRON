@@ -36,6 +36,10 @@ const modules = [
   { id: 'ai-services', name: 'IA Services', icon: Sparkles, path: '/ai-services' },
   { id: 'admin', name: 'Admin', icon: Settings, path: '/admin' },
   { id: 'notifications', name: 'Notifications', icon: Bell, path: '/notifications' },
+  { id: 'orders', name: 'Commandes', icon: ShoppingBag, path: '/orders' },
+  { id: 'inventory', name: 'Inventaire', icon: Package, path: '/inventory' },
+  { id: 'checkout', name: 'Checkout', icon: CreditCard, path: '/checkout' },
+  { id: 'payment-gateway', name: 'Paiements', icon: CreditCard, path: '/payment-gateway' },
 ] 
 const sectors = [
   { id: 'retail', name: 'Retail & Mode', target: '/sector/retail' },

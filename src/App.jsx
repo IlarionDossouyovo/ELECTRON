@@ -32,6 +32,10 @@ import CRM from './pages/CRM'
 import AIServices from './pages/AIServices'
 import Admin from './pages/Admin'
 import Notifications from './pages/Notifications'
+import Orders from './pages/Orders'
+import Inventory from './pages/Inventory'
+import Checkout from './pages/Checkout'
+import PaymentGateway from './pages/PaymentGateway'
 
 export default function App() {
   return (
@@ -65,6 +69,10 @@ export default function App() {
           <Route path="/ai-services" element={<AIServices />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/notifications" element={<Notifications />} />
+          <Route path="/orders" element={<Orders />} />
+          <Route path="/inventory" element={<Inventory />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/payment-gateway" element={<PaymentGateway />} />
           
           {/* Sector Pages */}
           <Route path="/sector/:sector" element={<SectorPage />} />
