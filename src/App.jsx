@@ -69,6 +69,17 @@ export default function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/catalog" element={<Catalog />} />
           <Route path="/edac" element={<EDAC />} />
+          <Route path="/loyalty" element={<Loyalty />} />
+          <Route path="/wishlist" element={<Wishlist />} />
+          <Route path="/flash-sales" element={<FlashSales />} />
+          <Route path="/chat" element={<LiveChat />} />
+          <Route path="/shipping" element={<ShippingCalculator />} />
+          <Route path="/taxes" element={<TaxCalculator />} />
+          <Route path="/tracking" element={<OrderTracking />} />
+          <Route path="/schedule" element={<EmployeeSchedule />} />
+          <Route path="/tickets" element={<SupportTickets />} />
+          <Route path="/coupons" element={<Coupons />} />
+          <Route path="/qrcode" element={<QRGenerator />} />
           <Route path="/electron-pay" element={<ElectronPay />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/about" element={<About />} />
@@ -103,6 +114,17 @@ export default function App() {
           <Route path="/services" element={<ServicesPresentation />} />
           <Route path="/catalog" element={<Catalog />} />
           <Route path="/edac" element={<EDAC />} />
+          <Route path="/loyalty" element={<Loyalty />} />
+          <Route path="/wishlist" element={<Wishlist />} />
+          <Route path="/flash-sales" element={<FlashSales />} />
+          <Route path="/chat" element={<LiveChat />} />
+          <Route path="/shipping" element={<ShippingCalculator />} />
+          <Route path="/taxes" element={<TaxCalculator />} />
+          <Route path="/tracking" element={<OrderTracking />} />
+          <Route path="/schedule" element={<EmployeeSchedule />} />
+          <Route path="/tickets" element={<SupportTickets />} />
+          <Route path="/coupons" element={<Coupons />} />
+          <Route path="/qrcode" element={<QRGenerator />} />
           
           {/* Sector Pages */}
           <Route path="/sector/:sector" element={<SectorPage />} />
