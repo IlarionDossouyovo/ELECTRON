@@ -7,7 +7,7 @@ import {
   Menu, X, ChevronDown, 
   DollarSign, Info, Briefcase,
   Phone, HelpCircle, LayoutDashboard,
-  Code, Download, Palette, Mail, Book, MessageCircle, Package, Zap,
+  Code, Download, Palette, Mail, Book, MessageCircle, Zap,
   Settings,
   FileText,
   Webhook
