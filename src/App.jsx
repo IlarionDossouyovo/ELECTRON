@@ -49,6 +49,7 @@ import APIDocumentation from './pages/APIDocumentation'
 import Messaging from './pages/Messaging'
 import ServicesPresentation from './pages/ServicesPresentation'
 import Catalog from './pages/Catalog'
+import EDAC from "./pages/EDAC"
 
 export default function App() {
   return (
@@ -67,6 +68,7 @@ export default function App() {
           <Route path="/ngo" element={<NGO />} />
           <Route path="/services" element={<Services />} />
           <Route path="/catalog" element={<Catalog />} />
+          <Route path="/edac" element={<EDAC />} />
           <Route path="/electron-pay" element={<ElectronPay />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/about" element={<About />} />
@@ -100,6 +102,7 @@ export default function App() {
           <Route path="/messages" element={<Messaging />} />
           <Route path="/services" element={<ServicesPresentation />} />
           <Route path="/catalog" element={<Catalog />} />
+          <Route path="/edac" element={<EDAC />} />
           
           {/* Sector Pages */}
           <Route path="/sector/:sector" element={<SectorPage />} />
