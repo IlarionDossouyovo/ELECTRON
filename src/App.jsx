@@ -47,6 +47,7 @@ import EmailTemplates from './pages/EmailTemplates'
 import InvoiceGenerator from './pages/InvoiceGenerator'
 import APIDocumentation from './pages/APIDocumentation'
 import Messaging from './pages/Messaging'
+import ServicesPresentation from './pages/ServicesPresentation'
 
 export default function App() {
   return (
@@ -95,6 +96,7 @@ export default function App() {
           <Route path="/invoices" element={<InvoiceGenerator />} />
           <Route path="/api-docs" element={<APIDocumentation />} />
           <Route path="/messages" element={<Messaging />} />
+          <Route path="/services" element={<ServicesPresentation />} />
           
           {/* Sector Pages */}
           <Route path="/sector/:sector" element={<SectorPage />} />

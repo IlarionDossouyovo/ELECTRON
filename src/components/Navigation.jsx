@@ -4,10 +4,10 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { 
   ShoppingCart, Truck, Package, CreditCard, 
   Sparkles, BarChart3, Users, Building2, 
-  Menu, X, ChevronDown, Zap, 
+  Menu, X, ChevronDown, 
   DollarSign, Info, Briefcase,
   Phone, HelpCircle, LayoutDashboard,
-  Code, Download, Palette, Mail, Book, MessageCircle,
+  Code, Download, Palette, Mail, Book, MessageCircle, Zap,
   Settings,
   FileText,
   Webhook
@@ -53,6 +53,7 @@ const modules = [
   { id: 'invoices', name: 'Factures', icon: FileText, path: '/invoices' },
   { id: 'api-docs', name: 'API Docs', icon: Book, path: '/api-docs' },
   { id: 'messages', name: 'Messages', icon: MessageCircle, path: '/messages' },
+  { id: 'services', name: 'Services', icon: Zap, path: '/services' },
 ] 
 const sectors = [
   { id: 'retail', name: 'Retail & Mode', target: '/sector/retail' },
