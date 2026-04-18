@@ -48,6 +48,7 @@ import InvoiceGenerator from './pages/InvoiceGenerator'
 import APIDocumentation from './pages/APIDocumentation'
 import Messaging from './pages/Messaging'
 import ServicesPresentation from './pages/ServicesPresentation'
+import Catalog from './pages/Catalog'
 
 export default function App() {
   return (
@@ -65,6 +66,7 @@ export default function App() {
           <Route path="/industry" element={<Industry />} />
           <Route path="/ngo" element={<NGO />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/catalog" element={<Catalog />} />
           <Route path="/electron-pay" element={<ElectronPay />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/about" element={<About />} />
@@ -97,6 +99,7 @@ export default function App() {
           <Route path="/api-docs" element={<APIDocumentation />} />
           <Route path="/messages" element={<Messaging />} />
           <Route path="/services" element={<ServicesPresentation />} />
+          <Route path="/catalog" element={<Catalog />} />
           
           {/* Sector Pages */}
           <Route path="/sector/:sector" element={<SectorPage />} />

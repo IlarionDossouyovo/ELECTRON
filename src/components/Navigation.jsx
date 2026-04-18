@@ -7,13 +7,14 @@ import {
   Menu, X, ChevronDown, 
   DollarSign, Info, Briefcase,
   Phone, HelpCircle, LayoutDashboard,
-  Code, Download, Palette, Mail, Book, MessageCircle, Zap,
+  Code, Download, Palette, Mail, Book, MessageCircle, Package, Zap,
   Settings,
   FileText,
   Webhook
 } from 'lucide-react'
 const modules = [
   { id: 'services', name: 'Nos Services', icon: Package, path: '/services' },
+  { id: 'catalog', name: 'Catalogue', icon: Package, path: '/catalog' },
   { id: 'ecommerce', name: 'E-commerce & Marketplace', icon: ShoppingCart, path: '/ecommerce' },
   { id: 'logistics', name: 'Transport & Logistique', icon: Truck, path: '/logistics' },
   { id: 'payments', name: 'Electron Pay', icon: CreditCard, path: '/electron-pay' },
@@ -54,6 +55,7 @@ const modules = [
   { id: 'api-docs', name: 'API Docs', icon: Book, path: '/api-docs' },
   { id: 'messages', name: 'Messages', icon: MessageCircle, path: '/messages' },
   { id: 'services', name: 'Services', icon: Zap, path: '/services' },
+  { id: 'catalog', name: 'Catalogue', icon: Package, path: '/catalog' },
 ] 
 const sectors = [
   { id: 'retail', name: 'Retail & Mode', target: '/sector/retail' },
