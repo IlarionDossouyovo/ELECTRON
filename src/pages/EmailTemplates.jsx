@@ -34,7 +34,7 @@ L'équipe ELECTRON vous remercie pour votre confiance.
 
 --
 ELECTRON Business Suite
- electronbusiness07@gmail.com`
+ electronbusiness@gmail.com`
 
 export default function EmailTemplates() {
   const [activeTab, setActiveTab] = useState('templates')

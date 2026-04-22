@@ -330,7 +330,7 @@ export default function InvoiceGenerator() {
               <div className="flex justify-between mb-8">
                 <div>
                   <h3 className="text-2xl font-bold text-slate-900">ELECTRON Business Suite</h3>
-                  <p className="text-slate-600">electronbusiness07@gmail.com</p>
+                  <p className="text-slate-600">electronbusiness@gmail.com</p>
                   <p className="text-slate-600">Cotonou, Benin</p>
                 </div>
                 <div className="text-right">

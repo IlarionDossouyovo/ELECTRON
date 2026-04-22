@@ -58,7 +58,7 @@ export default function ContactPageNew() {
                     <Mail className="w-6 h-6 text-cyan-400 mr-4" />
                     <div>
                       <p className="text-white font-medium">Email</p>
-                      <p className="text-slate-400">electronbusiness07@gmail.com</p>
+                      <p className="text-slate-400">electronbusiness@gmail.com</p>
                     </div>
                   </div>
                   <div className="flex items-center">

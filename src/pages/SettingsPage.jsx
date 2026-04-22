@@ -20,7 +20,7 @@ export default function SettingsPage() {
   
   const [profile, setProfile] = useState({
     name: 'DOSSOU-YOVO Ilarion',
-    email: 'electronbusiness07@gmail.com',
+    email: 'electronbusiness@gmail.com',
     phone: '+229 01 977 003 47',
     company: 'ELECTRON Business Suite',
   })

@@ -7,7 +7,7 @@ import {
 } from 'lucide-react'
 
 const users = [
-  { id: 1, name: 'DOSSOU-YOVO Ilarion', email: 'electronbusiness07@gmail.com', phone: '+229 01 977 003 47', role: 'Admin', status: 'Actif', company: 'ELECTRON', joined: '15/01/2024', avatar: 'DI' },
+  { id: 1, name: 'DOSSOU-YOVO Ilarion', email: 'electronbusiness@gmail.com', phone: '+229 01 977 003 47', role: 'Admin', status: 'Actif', company: 'ELECTRON', joined: '15/01/2024', avatar: 'DI' },
   { id: 2, name: 'Marie Kouassi', email: 'marie.k@electron.africa', phone: '+225 07 123 456 78', role: 'Manager', status: 'Actif', company: 'ELECTRON', joined: '20/02/2024', avatar: 'MK' },
   { id: 3, name: 'Jean Dupont', email: 'jean.d@electron.africa', phone: '+33 6 12 34 56 78', role: 'Client', status: 'Actif', company: 'Retail Corp', joined: '05/03/2024', avatar: 'JD' },
   { id: 4, name: 'Paul Obame', email: 'paul.o@electron.africa', phone: '+241 07 234 567 89', role: 'Livreur', status: 'Inactif', company: 'ELECTRON', joined: '12/04/2024', avatar: 'PO' },
