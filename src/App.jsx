@@ -84,6 +84,17 @@ export default function App() {
           <Route path="/payments-dashboard" element={<PaymentDashboard />} />
           <Route path="/e-expresse" element={<EExpresse />} />
           <Route path="/e-battisseurs" element={<EBattisseurs />} />
+          <Route path="/e-designe" element={<EDesigne />} />
+          <Route path="/e-clean" element={<EClean />} />
+          <Route path="/e-sim" element={<ESim />} />
+          <Route path="/cao-topographique" element={<CAOTopographique />} />
+          <Route path="/e-decor" element={<EDecor />} />
+          <Route path="/e-garrage" element={<EGarrage />} />
+          <Route path="/e-tech" element={<ETech />} />
+          <Route path="/e-outilles" element={<EOutilles />} />
+          <Route path="/e-seller" element={<ESeller />} />
+          <Route path="/e-immo" element={<EImmo />} />
+          <Route path="/e-graphisme" element={<EGraphisme />} />
           <Route path="/electron-pay" element={<ElectronPay />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/about" element={<About />} />
@@ -133,6 +144,17 @@ export default function App() {
           <Route path="/payments-dashboard" element={<PaymentDashboard />} />
           <Route path="/e-expresse" element={<EExpresse />} />
           <Route path="/e-battisseurs" element={<EBattisseurs />} />
+          <Route path="/e-designe" element={<EDesigne />} />
+          <Route path="/e-clean" element={<EClean />} />
+          <Route path="/e-sim" element={<ESim />} />
+          <Route path="/cao-topographique" element={<CAOTopographique />} />
+          <Route path="/e-decor" element={<EDecor />} />
+          <Route path="/e-garrage" element={<EGarrage />} />
+          <Route path="/e-tech" element={<ETech />} />
+          <Route path="/e-outilles" element={<EOutilles />} />
+          <Route path="/e-seller" element={<ESeller />} />
+          <Route path="/e-immo" element={<EImmo />} />
+          <Route path="/e-graphisme" element={<EGraphisme />} />
           
           {/* Sector Pages */}
           <Route path="/sector/:sector" element={<SectorPage />} />
