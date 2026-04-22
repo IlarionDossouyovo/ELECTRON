@@ -80,6 +80,8 @@ export default function App() {
           <Route path="/tickets" element={<SupportTickets />} />
           <Route path="/coupons" element={<Coupons />} />
           <Route path="/qrcode" element={<QRGenerator />} />
+          <Route path="/payment-settings" element={<PaymentSettings />} />
+          <Route path="/payments-dashboard" element={<PaymentDashboard />} />
           <Route path="/electron-pay" element={<ElectronPay />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/about" element={<About />} />
@@ -125,6 +127,8 @@ export default function App() {
           <Route path="/tickets" element={<SupportTickets />} />
           <Route path="/coupons" element={<Coupons />} />
           <Route path="/qrcode" element={<QRGenerator />} />
+          <Route path="/payment-settings" element={<PaymentSettings />} />
+          <Route path="/payments-dashboard" element={<PaymentDashboard />} />
           
           {/* Sector Pages */}
           <Route path="/sector/:sector" element={<SectorPage />} />
