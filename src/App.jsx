@@ -95,6 +95,7 @@ export default function App() {
           <Route path="/e-seller" element={<ESeller />} />
           <Route path="/e-immo" element={<EImmo />} />
           <Route path="/e-graphisme" element={<EGraphisme />} />
+          <Route path="/ai-automation" element={<AIAutomation />} />
           <Route path="/electron-pay" element={<ElectronPay />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/about" element={<About />} />
@@ -155,6 +156,7 @@ export default function App() {
           <Route path="/e-seller" element={<ESeller />} />
           <Route path="/e-immo" element={<EImmo />} />
           <Route path="/e-graphisme" element={<EGraphisme />} />
+          <Route path="/ai-automation" element={<AIAutomation />} />
           
           {/* Sector Pages */}
           <Route path="/sector/:sector" element={<SectorPage />} />
