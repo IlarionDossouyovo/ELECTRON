@@ -20,7 +20,7 @@ const marketplaces = [
     products: 156,
     rating: 4.7,
     vendors: 23,
-    url: '/e-battisseurs'
+    url: /e-e-battisseurs'
   },
   {
     id: 'edesigne',
@@ -34,7 +34,7 @@ const marketplaces = [
     products: 89,
     rating: 4.9,
     vendors: 15,
-    url: '/e-designe'
+    url: /e-e-designe'
   },
   {
     id: 'eclean',
@@ -48,7 +48,7 @@ const marketplaces = [
     products: 45,
     rating: 4.8,
     vendors: 12,
-    url: '/e-clean'
+    url: /e-e-clean'
   },
   {
     id: 'esim',
@@ -62,7 +62,7 @@ const marketplaces = [
     products: 234,
     rating: 4.6,
     vendors: 8,
-    url: '/e-sim'
+    url: /e-e-sim'
   },
   {
     id: 'caotopographique',
@@ -76,7 +76,7 @@ const marketplaces = [
     products: 67,
     rating: 4.9,
     vendors: 6,
-    url: '/cao-topographique'
+    url: /e-cao-topographique'
   },
   {
     id: 'edecor',
@@ -90,7 +90,7 @@ const marketplaces = [
     products: 312,
     rating: 4.7,
     vendors: 34,
-    url: '/e-decor'
+    url: /e-e-decor'
   },
   {
     id: 'egarrage',
@@ -104,7 +104,7 @@ const marketplaces = [
     products: 456,
     rating: 4.5,
     vendors: 28,
-    url: '/e-garrage'
+    url: /e-e-garrage'
   },
   {
     id: 'etech',
@@ -118,7 +118,7 @@ const marketplaces = [
     products: 523,
     rating: 4.8,
     vendors: 42,
-    url: '/e-tech'
+    url: /e-e-tech'
   },
   {
     id: 'eoutilles',
@@ -132,7 +132,7 @@ const marketplaces = [
     products: 289,
     rating: 4.6,
     vendors: 19,
-    url: '/e-outilles'
+    url: /e-e-outilles'
   },
   {
     id: 'eseller',
@@ -146,7 +146,7 @@ const marketplaces = [
     products: 892,
     rating: 4.4,
     vendors: 67,
-    url: '/e-seller'
+    url: /e-e-seller'
   },
   {
     id: 'eimmo',
@@ -160,7 +160,7 @@ const marketplaces = [
     products: 178,
     rating: 4.7,
     vendors: 45,
-    url: '/e-immo'
+    url: /e-e-immo'
   },
   {
     id: 'egraphisme',
@@ -174,7 +174,7 @@ const marketplaces = [
     products: 145,
     rating: 4.9,
     vendors: 22,
-    url: '/e-graphisme'
+    url: /e-e-graphisme'
   }
 ]
 
