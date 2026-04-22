@@ -82,6 +82,7 @@ export default function App() {
           <Route path="/qrcode" element={<QRGenerator />} />
           <Route path="/payment-settings" element={<PaymentSettings />} />
           <Route path="/payments-dashboard" element={<PaymentDashboard />} />
+          <Route path="/e-expresse" element={<EExpresse />} />
           <Route path="/electron-pay" element={<ElectronPay />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/about" element={<About />} />
@@ -129,6 +130,7 @@ export default function App() {
           <Route path="/qrcode" element={<QRGenerator />} />
           <Route path="/payment-settings" element={<PaymentSettings />} />
           <Route path="/payments-dashboard" element={<PaymentDashboard />} />
+          <Route path="/e-expresse" element={<EExpresse />} />
           
           {/* Sector Pages */}
           <Route path="/sector/:sector" element={<SectorPage />} />
