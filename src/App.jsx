@@ -83,6 +83,7 @@ export default function App() {
           <Route path="/payment-settings" element={<PaymentSettings />} />
           <Route path="/payments-dashboard" element={<PaymentDashboard />} />
           <Route path="/e-expresse" element={<EExpresse />} />
+          <Route path="/e-battisseurs" element={<EBattisseurs />} />
           <Route path="/electron-pay" element={<ElectronPay />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/about" element={<About />} />
@@ -131,6 +132,7 @@ export default function App() {
           <Route path="/payment-settings" element={<PaymentSettings />} />
           <Route path="/payments-dashboard" element={<PaymentDashboard />} />
           <Route path="/e-expresse" element={<EExpresse />} />
+          <Route path="/e-battisseurs" element={<EBattisseurs />} />
           
           {/* Sector Pages */}
           <Route path="/sector/:sector" element={<SectorPage />} />
