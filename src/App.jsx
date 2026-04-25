@@ -50,6 +50,19 @@ import Messaging from './pages/Messaging'
 import ServicesPresentation from './pages/ServicesPresentation'
 import Catalog from './pages/Catalog'
 import EDAC from "./pages/EDAC"
+import EExpresse from './pages/EExpresse'
+import EBattisseurs from './pages/EBattisseurs'
+import EDesigne from './pages/EDesigne'
+import EClean from './pages/EClean'
+import ESim from './pages/ESim'
+import CAOTopographique from './pages/CAOTopographique'
+import EDecor from './pages/EDecor'
+import EGarage from './pages/EGarage'
+import ETech from './pages/ETech'
+import ETools from './pages/ETools'
+import ESeller from './pages/ESeller'
+import EImmo from './pages/EImmo'
+import EGraphisme from './pages/EGraphisme'
 
 export default function App() {
   return (
@@ -89,9 +102,7 @@ export default function App() {
           <Route path="/e-sim" element={<ESim />} />
           <Route path="/cao-topographique" element={<CAOTopographique />} />
           <Route path="/e-decor" element={<EDecor />} />
-          <Route path="/e-garrage" element={<EGarrage />} />
           <Route path="/e-tech" element={<ETech />} />
-          <Route path="/e-outilles" element={<EOutilles />} />
           <Route path="/e-seller" element={<ESeller />} />
           <Route path="/e-immo" element={<EImmo />} />
           <Route path="/e-graphisme" element={<EGraphisme />} />
@@ -151,9 +162,7 @@ export default function App() {
           <Route path="/e-sim" element={<ESim />} />
           <Route path="/cao-topographique" element={<CAOTopographique />} />
           <Route path="/e-decor" element={<EDecor />} />
-          <Route path="/e-garrage" element={<EGarrage />} />
           <Route path="/e-tech" element={<ETech />} />
-          <Route path="/e-outilles" element={<EOutilles />} />
           <Route path="/e-seller" element={<ESeller />} />
           <Route path="/e-immo" element={<EImmo />} />
           <Route path="/e-graphisme" element={<EGraphisme />} />
