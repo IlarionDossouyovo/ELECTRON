@@ -1,0 +1,13 @@
+{
+  "name": "ELECTRON Business Suite",
+  "short_name": "ELECTRON",
+  "description": "Plateforme digitale complete",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#22d3ee",
+  "icons": [
+    { "src": "/vite.svg", "sizes": "192x192", "type": "image/svg+xml" },
+    { "src": "/vite.svg", "sizes": "512x512", "type": "image/svg+xml" }
+  ]
+}

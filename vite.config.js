@@ -7,10 +7,20 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     emptyOutDir: true,
-    sourcemap: false
+    sourcemap: false,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+        }
+      }
+    }
   },
   server: {
     port: 5173,
     host: true
+  },
+  define: {
+    'process.env': {}
   }
 })
