@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELECTRON Business Suite</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); min-height: 100vh; margin: 0; font-family: system-ui, sans-serif; }
+    .hero { background: linear-gradient(90deg, #22d3ee, #a78bfa, #f472b6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); }
+    a, button { cursor: pointer; }
+  </style>
+</head>
+<body class="text-white">
+  <nav class="fixed top-0 w-full bg-slate-900/95 p-4 border-b border-slate-800 flex justify-between items-center">
+    <a href="/" class="text-2xl font-bold text-cyan-400">⚡ ELECTRON</a>
+    <div class="flex gap-4 text-sm">
+      <a href="#marketplaces" class="text-gray-300 hover:text-cyan-400">Marketplaces</a>
+      <a href="/pages/ai.html" class="text-gray-300 hover:text-cyan-400">IA</a>
+      <a href="/pages/payments.html" class="text-gray-300 hover:text-cyan-400">Paiements</a>
+      <a href="/pages/cart.html" class="text-gray-300 hover:text-cyan-400">Panier</a>
+      <a href="/pages/contact.html" class="text-gray-300 hover:text-cyan-400">Contact</a>
+    </div>
+  </nav>
+  <div class="pt-24 text-center p-8">
+    <h1 class="hero text-6xl font-bold">ELECTRON</h1>
+    <p class="text-xl text-gray-400 mt-4">Business Suite - 12 Marketplaces</p>
+  </div>
+  <div class="container mx-auto p-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+    <a href="/pages/e-expresse.html" class="card p-6 rounded-xl text-center hover:bg-white/10 block"><span class="text-3xl">🏪</span><h3 class="mt-2 text-cyan-400">E-Expresse</h3></a>
+    <a href="/pages/e-battisseurs.html" class="card p-6 rounded-xl text-center hover:bg-white/10 block"><span class="text-3xl">🏗️</span><h3 class="mt-2 text-orange-400">E-Battisseurs</h3></a>
+    <a href="/pages/e-clean.html" class="card p-6 rounded-xl text-center hover:bg-white/10 block"><span class="text-3xl">🧹</span><h3 class="mt-2 text-blue-400">E-Clean</h3></a>
+    <a href="/pages/e-sim.html" class="card p-6 rounded-xl text-center hover:bg-white/10 block"><span class="text-3xl">📱</span><h3 class="mt-2 text-indigo-400">E-Sim</h3></a>
+    <a href="/pages/e-tech.html" class="card p-6 rounded-xl text-center hover:bg-white/10 block"><span class="text-3xl">💻</span><h3 class="mt-2 text-cyan-400">E-Tech</h3></a>
+    <a href="/pages/e-seller.html" class="card p-6 rounded-xl text-center hover:bg-white/10 block"><span class="text-3xl">🛍️</span><h3 class="mt-2 text-purple-400">E-Seller</h3></a>
+    <a href="/pages/e-immo.html" class="card p-6 rounded-xl text-center hover:bg-white/10 block"><span class="text-3xl">🏠</span><h3 class="mt-2 text-green-400">E-Immo</h3></a>
+    <a href="/pages/ai.html" class="card p-6 rounded-xl text-center hover:bg-white/10 block"><span class="text-3xl">🤖</span><h3 class="mt-2 text-purple-400">AI</h3></a>
+  </div>
+  <footer class="text-center p-8 text-gray-500">© 2025 ELECTRON Business Suite</footer>
+</body>
+</html>

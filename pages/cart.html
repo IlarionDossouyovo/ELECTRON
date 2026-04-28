@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - ELECTRON</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); min-height: 100vh; margin: 0; }
+    .card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); }
+  </style>
+</head>
+<body class="text-white">
+  <nav class="fixed top-0 w-full bg-slate-900/95 p-4 border-b border-slate-800 flex justify-between">
+    <a href="/" class="text-2xl font-bold text-cyan-400">⚡ ELECTRON</a>
+    <div class="flex gap-4 text-sm">
+      <a href="/" class="text-gray-300 hover:text-cyan-400">Accueil</a>
+      <a href="/pages/cart.html" class="text-gray-300 hover:text-cyan-400">Panier</a>
+      <a href="/pages/contact.html" class="text-gray-300 hover:text-cyan-400">Contact</a>
+    </div>
+  </nav>
+  <div class="pt-24 container mx-auto p-8">
+    <h1 class="text-4xl font-bold text-center mb-8">Cart</h1>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="card p-6 rounded-xl text-center"><h3 class="font-bold">Produit 1</h3><p class="text-cyan-400 text-xl">25 000 XOF</p><button class="mt-2 w-full py-2 bg-cyan-500 rounded-lg">Commander</button></div>
+      <div class="card p-6 rounded-xl text-center"><h3 class="font-bold">Produit 2</h3><p class="text-cyan-400 text-xl">50 000 XOF</p><button class="mt-2 w-full py-2 bg-cyan-500 rounded-lg">Commander</button></div>
+      <div class="card p-6 rounded-xl text-center"><h3 class="font-bold">Produit 3</h3><p class="text-cyan-400 text-xl">75 000 XOF</p><button class="mt-2 w-full py-2 bg-cyan-500 rounded-lg">Commander</button></div>
+    </div>
+  </div>
+  <footer class="text-center p-8 text-gray-500">© 2025 ELECTRON</footer>
+</body>
+</html>
