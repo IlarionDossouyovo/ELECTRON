@@ -7,338 +7,36 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); min-height: 100vh; margin: 0; font-family: system-ui, sans-serif; }
-    .hero-title { background: linear-gradient(90deg, #22d3ee, #a78bfa, #f472b6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero { background: linear-gradient(90deg, #22d3ee, #a78bfa, #f472b6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     .card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); }
-    .card:hover { background: rgba(255,255,255,0.1); }
-    .section { display: none !important; }
-    .section.active { display: block !important; }
-    nav a { cursor: pointer; }
-    nav a:hover { color: #22d3ee; }
+    a, button { cursor: pointer; }
   </style>
 </head>
 <body class="text-white">
-  <!-- Navigation -->
-  <nav class="fixed top-0 w-full z-50 bg-slate-900/90 backdrop-blur border-b border-slate-800">
-    <div class="container mx-auto px-4 py-3 flex justify-between items-center flex-wrap gap-2">
-      <span onclick="showSection('home')" class="text-2xl font-bold text-cyan-400 cursor-pointer">⚡ ELECTRON</span>
-      <div class="flex gap-4 flex-wrap text-sm">
-        <span onclick="showSection('home')" class="text-gray-300 cursor-pointer hover:text-cyan-400">Marketplaces</span>
-        <span onclick="showSection('ai')" class="text-gray-300 cursor-pointer hover:text-cyan-400">IA</span>
-        <span onclick="showSection('payments')" class="text-gray-300 cursor-pointer hover:text-cyan-400">Paiements</span>
-        <span onclick="showSection('cart')" class="text-gray-300 cursor-pointer hover:text-cyan-400">Panier</span>
-        <span onclick="showSection('tracking')" class="text-gray-300 cursor-pointer hover:text-cyan-400">Suivi</span>
-        <span onclick="showSection('login')" class="text-gray-300 cursor-pointer hover:text-cyan-400">Connexion</span>
-        <span onclick="showSection('contact')" class="text-gray-300 cursor-pointer hover:text-cyan-400">Contact</span>
-      </div>
+  <nav class="fixed top-0 w-full bg-slate-900/95 p-4 border-b border-slate-800 flex justify-between items-center">
+    <a href="/" class="text-2xl font-bold text-cyan-400">⚡ ELECTRON</a>
+    <div class="flex gap-4 text-sm">
+      <a href="#marketplaces" class="text-gray-300 hover:text-cyan-400">Marketplaces</a>
+      <a href="/pages/ai.html" class="text-gray-300 hover:text-cyan-400">IA</a>
+      <a href="/pages/payments.html" class="text-gray-300 hover:text-cyan-400">Paiements</a>
+      <a href="/pages/cart.html" class="text-gray-300 hover:text-cyan-400">Panier</a>
+      <a href="/pages/contact.html" class="text-gray-300 hover:text-cyan-400">Contact</a>
     </div>
   </nav>
-
-  <!-- HOME SECTION -->
-  <div id="home" class="section active pt-20">
-    <div class="text-center px-4 py-12">
-      <h1 class="hero-title text-5xl md:text-7xl font-bold mb-4">ELECTRON</h1>
-      <p class="text-xl text-gray-400 mb-2">Business Suite - Plateforme Digitale Complète</p>
-      <p class="text-gray-500">12 Marketplaces · IA · Paiements · Logistique</p>
-    </div>
-
-    <!-- Main Links -->
-    <div class="container mx-auto px-4 mb-12">
-      <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-        <div onclick="showSection('expresse')" class="card p-8 rounded-2xl text-center cursor-pointer hover:bg-white/10">
-          <h3 class="text-2xl font-bold text-cyan-400 mb-2">🏪 E-Expresse</h3>
-          <p class="text-gray-400">Marketplace Principal</p>
-        </div>
-        <div onclick="showSection('ai')" class="card p-8 rounded-2xl text-center cursor-pointer hover:bg-white/10">
-          <h3 class="text-2xl font-bold text-purple-400 mb-2">🤖 AI Automation</h3>
-          <p class="text-gray-400">Intelligence Artificielle</p>
-        </div>
-        <div onclick="showSection('payments')" class="card p-8 rounded-2xl text-center cursor-pointer hover:bg-white/10">
-          <h3 class="text-2xl font-bold text-green-400 mb-2">💳 Payments</h3>
-          <p class="text-gray-400">Paiements Sécurisés</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- 12 Marketplaces -->
-    <div class="container mx-auto px-4 mb-12">
-      <h2 class="text-3xl font-bold text-center mb-8">🛒 12 Marketplaces</h2>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-        <div onclick="showSection('battisseurs')" class="card p-4 rounded-xl text-center cursor-pointer"><span class="text-2xl block">🏗️</span><h3 class="font-bold text-orange-400">E-Battisseurs</h3></div>
-        <div onclick="showSection('designe')" class="card p-4 rounded-xl text-center cursor-pointer"><span class="text-2xl block">🎨</span><h3 class="font-bold text-pink-400">E-Designe</h3></div>
-        <div onclick="showSection('clean')" class="card p-4 rounded-xl text-center cursor-pointer"><span class="text-2xl block">🧹</span><h3 class="font-bold text-blue-400">E-Clean</h3></div>
-        <div onclick="showSection('sim')" class="card p-4 rounded-xl text-center cursor-pointer"><span class="text-2xl block">📱</span><h3 class="font-bold text-indigo-400">E-Sim</h3></div>
-        <div onclick="showSection('cao')" class="card p-4 rounded-xl text-center cursor-pointer"><span class="text-2xl block">📐</span><h3 class="font-bold text-teal-400">CAO</h3></div>
-        <div onclick="showSection('decor')" class="card p-4 rounded-xl text-center cursor-pointer"><span class="text-2xl block">🛋️</span><h3 class="font-bold text-amber-400">E-Decor</h3></div>
-        <div onclick="showSection('garage')" class="card p-4 rounded-xl text-center cursor-pointer"><span class="text-2xl block">🔧</span><h3 class="font-bold text-red-400">E-Garage</h3></div>
-        <div onclick="showSection('tech')" class="card p-4 rounded-xl text-center cursor-pointer"><span class="text-2xl block">💻</span><h3 class="font-bold text-cyan-400">E-Tech</h3></div>
-        <div onclick="showSection('outils')" class="card p-4 rounded-xl text-center cursor-pointer"><span class="text-2xl block">🔨</span><h3 class="font-bold text-gray-400">E-Outils</h3></div>
-        <div onclick="showSection('seller')" class="card p-4 rounded-xl text-center cursor-pointer"><span class="text-2xl block">🛍️</span><h3 class="font-bold text-purple-400">E-Seller</h3></div>
-        <div onclick="showSection('immo')" class="card p-4 rounded-xl text-center cursor-pointer"><span class="text-2xl block">🏠</span><h3 class="font-bold text-green-400">E-Immo</h3></div>
-        <div onclick="showSection('graphisme')" class="card p-4 rounded-xl text-center cursor-pointer"><span class="text-2xl block">✏️</span><h3 class="font-bold text-violet-400">E-Graphisme</h3></div>
-      </div>
-    </div>
-
-    <!-- Modules -->
-    <div class="container mx-auto px-4 mb-12">
-      <h2 class="text-2xl font-bold text-center mb-6">⚙️ Modules</h2>
-      <div class="flex flex-wrap justify-center gap-3">
-        <span class="px-4 py-2 bg-cyan-500/20 rounded-full text-cyan-300">E-commerce</span>
-        <span class="px-4 py-2 bg-purple-500/20 rounded-full text-purple-300">Logistique</span>
-        <span class="px-4 py-2 bg-green-500/20 rounded-full text-green-300">Paiements</span>
-        <span class="px-4 py-2 bg-pink-500/20 rounded-full text-pink-300">IA</span>
-        <span class="px-4 py-2 bg-blue-500/20 rounded-full text-blue-300">Marketing</span>
-        <span class="px-4 py-2 bg-orange-500/20 rounded-full text-orange-300">Recrutement</span>
-      </div>
-    </div>
+  <div class="pt-24 text-center p-8">
+    <h1 class="hero text-6xl font-bold">ELECTRON</h1>
+    <p class="text-xl text-gray-400 mt-4">Business Suite - 12 Marketplaces</p>
   </div>
-
-  <!-- E-EXPRESSE -->
-  <div id="expresse" class="section pt-20 container mx-auto px-4 py-12">
-    <h1 class="text-4xl font-bold text-center mb-4">🏪 E-Expresse</h1>
-    <p class="text-center text-gray-400 mb-8">Marketplace Principal</p>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Smartphone</h3><p class="text-cyan-400 text-xl">150 000 XOF</p><button class="mt-2 w-full py-2 bg-cyan-500 rounded-lg">Ajouter au panier</button></div>
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Ordinateur</h3><p class="text-cyan-400 text-xl">350 000 XOF</p><button class="mt-2 w-full py-2 bg-cyan-500 rounded-lg">Ajouter au panier</button></div>
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Tablette</h3><p class="text-cyan-400 text-xl">120 000 XOF</p><button class="mt-2 w-full py-2 bg-cyan-500 rounded-lg">Ajouter au panier</button></div>
-    </div>
+  <div class="container mx-auto p-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+    <a href="/pages/e-expresse.html" class="card p-6 rounded-xl text-center hover:bg-white/10 block"><span class="text-3xl">🏪</span><h3 class="mt-2 text-cyan-400">E-Expresse</h3></a>
+    <a href="/pages/e-battisseurs.html" class="card p-6 rounded-xl text-center hover:bg-white/10 block"><span class="text-3xl">🏗️</span><h3 class="mt-2 text-orange-400">E-Battisseurs</h3></a>
+    <a href="/pages/e-clean.html" class="card p-6 rounded-xl text-center hover:bg-white/10 block"><span class="text-3xl">🧹</span><h3 class="mt-2 text-blue-400">E-Clean</h3></a>
+    <a href="/pages/e-sim.html" class="card p-6 rounded-xl text-center hover:bg-white/10 block"><span class="text-3xl">📱</span><h3 class="mt-2 text-indigo-400">E-Sim</h3></a>
+    <a href="/pages/e-tech.html" class="card p-6 rounded-xl text-center hover:bg-white/10 block"><span class="text-3xl">💻</span><h3 class="mt-2 text-cyan-400">E-Tech</h3></a>
+    <a href="/pages/e-seller.html" class="card p-6 rounded-xl text-center hover:bg-white/10 block"><span class="text-3xl">🛍️</span><h3 class="mt-2 text-purple-400">E-Seller</h3></a>
+    <a href="/pages/e-immo.html" class="card p-6 rounded-xl text-center hover:bg-white/10 block"><span class="text-3xl">🏠</span><h3 class="mt-2 text-green-400">E-Immo</h3></a>
+    <a href="/pages/ai.html" class="card p-6 rounded-xl text-center hover:bg-white/10 block"><span class="text-3xl">🤖</span><h3 class="mt-2 text-purple-400">AI</h3></a>
   </div>
-
-  <!-- AI SECTION -->
-  <div id="ai" class="section pt-20 container mx-auto px-4 py-12">
-    <h1 class="text-4xl font-bold text-center mb-4">🤖 AI Automation</h1>
-    <p class="text-center text-purple-400 mb-8">Intelligence Artificielle</p>
-    <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-      <div class="card p-6 rounded-xl text-center"><span class="text-4xl">💬</span><h3 class="font-bold mt-4">Chatbot IA</h3><p class="text-gray-400">Assistant 24/7</p></div>
-      <div class="card p-6 rounded-xl text-center"><span class="text-4xl">🎯</span><h3 class="font-bold mt-4">Recommandations</h3><p class="text-gray-400">Produits personalises</p></div>
-      <div class="card p-6 rounded-xl text-center"><span class="text-4xl">📊</span><h3 class="font-bold mt-4">Analyse</h3><p class="text-gray-400">Prevision des ventes</p></div>
-    </div>
-  </div>
-
-  <!-- PAYMENTS SECTION -->
-  <div id="payments" class="section pt-20 container mx-auto px-4 py-12">
-    <h1 class="text-4xl font-bold text-center mb-8">💳 Moyens de Paiement</h1>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-2xl mx-auto">
-      <div class="card p-6 rounded-xl text-center"><span class="text-3xl">🟠</span><p class="mt-2">Orange Money</p></div>
-      <div class="card p-6 rounded-xl text-center"><span class="text-3xl">🟡</span><p class="mt-2">MTN Mobile</p></div>
-      <div class="card p-6 rounded-xl text-center"><span class="text-3xl">🔵</span><p class="mt-2">Wave</p></div>
-      <div class="card p-6 rounded-xl text-center"><span class="text-3xl">💳</span><p class="mt-2">Stripe</p></div>
-      <div class="card p-6 rounded-xl text-center"><span class="text-3xl">🔴</span><p class="mt-2">PayPal</p></div>
-      <div class="card p-6 rounded-xl text-center"><span class="text-3xl">₿</span><p class="mt-2">Bitcoin</p></div>
-    </div>
-  </div>
-
-  <!-- CART SECTION -->
-  <div id="cart" class="section pt-20 container mx-auto px-4 py-12">
-    <h1 class="text-4xl font-bold text-center mb-8">🛒 Votre Panier</h1>
-    <p class="text-center text-gray-400 mb-8">Votre panier est vide</p>
-    <div class="text-center">
-      <button onclick="showSection('home')" class="px-6 py-3 bg-cyan-500 rounded-lg">Continuer vos achats</button>
-      <button class="ml-4 px-6 py-3 bg-green-500 rounded-lg">Passer commande</button>
-    </div>
-  </div>
-
-  <!-- MARKETPLACE SECTIONS (Generic) -->
-  <div id="battisseurs" class="section pt-20 container mx-auto px-4 py-12">
-    <h1 class="text-4xl font-bold text-center mb-4">🏗️ E-Battisseurs</h1>
-    <p class="text-center text-gray-400 mb-8">Construction & BTP</p>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Ciment (Sac 50kg)</h3><p class="text-cyan-400 text-xl">3 500 XOF</p><button class="mt-2 w-full py-2 bg-orange-500 rounded-lg">Commander</button></div>
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Fer a Beton</h3><p class="text-cyan-400 text-xl">25 000 XOF</p><button class="mt-2 w-full py-2 bg-orange-500 rounded-lg">Commander</button></div>
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Brique Rouge</h3><p class="text-cyan-400 text-xl">150 XOF</p><button class="mt-2 w-full py-2 bg-orange-500 rounded-lg">Commander</button></div>
-    </div>
-  </div>
-  
-  <div id="designe" class="section pt-20 container mx-auto px-4 py-12">
-    <h1 class="text-4xl font-bold text-center mb-4">🎨 E-Designe</h1>
-    <p class="text-center text-gray-400 mb-8">Design & Graphisme</p>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Logo Professionnel</h3><p class="text-cyan-400 text-xl">50 000 XOF</p><button class="mt-2 w-full py-2 bg-pink-500 rounded-lg">Commander</button></div>
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Carte de Visite</h3><p class="text-cyan-400 text-xl">15 000 XOF</p><button class="mt-2 w-full py-2 bg-pink-500 rounded-lg">Commander</button></div>
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Affiche Publicitaire</h3><p class="text-cyan-400 text-xl">25 000 XOF</p><button class="mt-2 w-full py-2 bg-pink-500 rounded-lg">Commander</button></div>
-    </div>
-  </div>
-  
-  <div id="clean" class="section pt-20 container mx-auto px-4 py-12">
-    <h1 class="text-4xl font-bold text-center mb-4">🧹 E-Clean</h1>
-    <p class="text-center text-gray-400 mb-8">Nettoyage & Services</p>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Nettoyage Maison</h3><p class="text-cyan-400 text-xl">15 000 XOF/h</p><button class="mt-2 w-full py-2 bg-blue-500 rounded-lg">Reserver</button></div>
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Nettoyage Bureau</h3><p class="text-cyan-400 text-xl">25 000 XOF/h</p><button class="mt-2 w-full py-2 bg-blue-500 rounded-lg">Reserver</button></div>
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Nettoyage Vitres</h3><p class="text-cyan-400 text-xl">10 000 XOF</p><button class="mt-2 w-full py-2 bg-blue-500 rounded-lg">Reserver</button></div>
-    </div>
-  </div>
-  
-  <div id="sim" class="section pt-20 container mx-auto px-4 py-12">
-    <h1 class="text-4xl font-bold text-center mb-4">📱 E-Sim</h1>
-    <p class="text-center text-gray-400 mb-8">Telephonie & IT</p>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">SIM MTN</h3><p class="text-cyan-400 text-xl">500 XOF</p><button class="mt-2 w-full py-2 bg-indigo-500 rounded-lg">Acheter</button></div>
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">SIM Moov</h3><p class="text-cyan-400 text-xl">500 XOF</p><button class="mt-2 w-full py-2 bg-indigo-500 rounded-lg">Acheter</button></div>
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">SIM Orange</h3><p class="text-cyan-400 text-xl">500 XOF</p><button class="mt-2 w-full py-2 bg-indigo-500 rounded-lg">Acheter</button></div>
-    </div>
-  </div>
-  
-  <div id="cao" class="section pt-20 container mx-auto px-4 py-12">
-    <h1 class="text-4xl font-bold text-center mb-4">📐 CAO-Topographique</h1>
-    <p class="text-center text-gray-400 mb-8">Ingenierie</p>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Plan Maison</h3><p class="text-cyan-400 text-xl">150 000 XOF</p><button class="mt-2 w-full py-2 bg-teal-500 rounded-lg">Commander</button></div>
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Plan Batiment</h3><p class="text-cyan-400 text-xl">250 000 XOF</p><button class="mt-2 w-full py-2 bg-teal-500 rounded-lg">Commander</button></div>
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Topographie</h3><p class="text-cyan-400 text-xl">500 000 XOF</p><button class="mt-2 w-full py-2 bg-teal-500 rounded-lg">Commander</button></div>
-    </div>
-  </div>
-  
-  <div id="decor" class="section pt-20 container mx-auto px-4 py-12">
-    <h1 class="text-4xl font-bold text-center mb-4">🛋️ E-Decor</h1>
-    <p class="text-center text-gray-400 mb-8">Decoration & Ameublement</p>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Canape</h3><p class="text-cyan-400 text-xl">150 000 XOF</p><button class="mt-2 w-full py-2 bg-amber-500 rounded-lg">Commander</button></div>
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Table</h3><p class="text-cyan-400 text-xl">75 000 XOF</p><button class="mt-2 w-full py-2 bg-amber-500 rounded-lg">Commander</button></div>
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Chaise</h3><p class="text-cyan-400 text-xl">25 000 XOF</p><button class="mt-2 w-full py-2 bg-amber-500 rounded-lg">Commander</button></div>
-    </div>
-  </div>
-  
-  <div id="garage" class="section pt-20 container mx-auto px-4 py-12">
-    <h1 class="text-4xl font-bold text-center mb-4">🔧 E-Garage</h1>
-    <p class="text-center text-gray-400 mb-8">Auto & Mecanique</p>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Vidange</h3><p class="text-cyan-400 text-xl">15 000 XOF</p><button class="mt-2 w-full py-2 bg-red-500 rounded-lg">Reserver</button></div>
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Pneumatique</h3><p class="text-cyan-400 text-xl">45 000 XOF</p><button class="mt-2 w-full py-2 bg-red-500 rounded-lg">Commander</button></div>
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Freins</h3><p class="text-cyan-400 text-xl">35 000 XOF</p><button class="mt-2 w-full py-2 bg-red-500 rounded-lg">Reserver</button></div>
-    </div>
-  </div>
-  
-  <div id="tech" class="section pt-20 container mx-auto px-4 py-12">
-    <h1 class="text-4xl font-bold text-center mb-4">💻 E-Tech</h1>
-    <p class="text-center text-gray-400 mb-8">Technologie</p>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Telephones</h3><p class="text-cyan-400 text-xl">50 000 - 200 000 XOF</p><button class="mt-2 w-full py-2 bg-cyan-500 rounded-lg">Voir</button></div>
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Ordinateurs</h3><p class="text-cyan-400 text-xl">150 000 - 500 000 XOF</p><button class="mt-2 w-full py-2 bg-cyan-500 rounded-lg">Voir</button></div>
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Accessoires</h3><p class="text-cyan-400 text-xl">5 000 - 50 000 XOF</p><button class="mt-2 w-full py-2 bg-cyan-500 rounded-lg">Voir</button></div>
-    </div>
-  </div>
-  
-  <div id="outils" class="section pt-20 container mx-auto px-4 py-12">
-    <h1 class="text-4xl font-bold text-center mb-4">🔨 E-Outils</h1>
-    <p class="text-center text-gray-400 mb-8">Outils & Equipement</p>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Perceuse</h3><p class="text-cyan-400 text-xl">35 000 XOF</p><button class="mt-2 w-full py-2 bg-gray-500 rounded-lg">Commander</button></div>
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Meuleuse</h3><p class="text-cyan-400 text-xl">45 000 XOF</p><button class="mt-2 w-full py-2 bg-gray-500 rounded-lg">Commander</button></div>
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Scie</h3><p class="text-cyan-400 text-xl">55 000 XOF</p><button class="mt-2 w-full py-2 bg-gray-500 rounded-lg">Commander</button></div>
-    </div>
-  </div>
-  
-  <div id="seller" class="section pt-20 container mx-auto px-4 py-12">
-    <h1 class="text-4xl font-bold text-center mb-4">🛍️ E-Seller</h1>
-    <p class="text-center text-gray-400 mb-8">Vente en Ligne</p>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Creer Boutique</h3><p class="text-cyan-400 text-xl">25 000 XOF</p><button class="mt-2 w-full py-2 bg-purple-500 rounded-lg">Demarrer</button></div>
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Formation</h3><p class="text-cyan-400 text-xl">50 000 XOF</p><button class="mt-2 w-full py-2 bg-purple-500 rounded-lg">S'inscrire</button></div>
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Pack Complet</h3><p class="text-cyan-400 text-xl">100 000 XOF</p><button class="mt-2 w-full py-2 bg-purple-500 rounded-lg">Commander</button></div>
-    </div>
-  </div>
-  
-  <div id="immo" class="section pt-20 container mx-auto px-4 py-12">
-    <h1 class="text-4xl font-bold text-center mb-4">🏠 E-Immo</h1>
-    <p class="text-center text-gray-400 mb-8">Immobilier</p>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Appartement</h3><p class="text-cyan-400 text-xl">150 000 XOF/mois</p><button class="mt-2 w-full py-2 bg-green-500 rounded-lg">Louer</button></div>
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Maison</h3><p class="text-cyan-400 text-xl">350 000 XOF/mois</p><button class="mt-2 w-full py-2 bg-green-500 rounded-lg">Louer</button></div>
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Bureau</h3><p class="text-cyan-400 text-xl">200 000 XOF/mois</p><button class="mt-2 w-full py-2 bg-green-500 rounded-lg">Louer</button></div>
-    </div>
-  </div>
-  
-  <div id="graphisme" class="section pt-20 container mx-auto px-4 py-12">
-    <h1 class="text-4xl font-bold text-center mb-4">✏️ E-Graphisme</h1>
-    <p class="text-center text-gray-400 mb-8">Creation Graphique</p>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Logo</h3><p class="text-cyan-400 text-xl">30 000 XOF</p><button class="mt-2 w-full py-2 bg-violet-500 rounded-lg">Commander</button></div>
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Affiche</h3><p class="text-cyan-400 text-xl">20 000 XOF</p><button class="mt-2 w-full py-2 bg-violet-500 rounded-lg">Commander</button></div>
-      <div class="card p-6 rounded-xl"><h3 class="font-bold">Pack Design</h3><p class="text-cyan-400 text-xl">75 000 XOF</p><button class="mt-2 w-full py-2 bg-violet-500 rounded-lg">Commander</button></div>
-    </div>
-  </div>
-
-  <!-- ADDITIONAL SECTIONS -->
-  <div id="login" class="section pt-20 container mx-auto px-4 py-12 max-w-md">
-    <h1 class="text-3xl font-bold text-center mb-8">Connexion</h1>
-    <form class="card p-6 rounded-xl space-y-4">
-      <input type="email" placeholder="Email" class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white">
-      <input type="password" placeholder="Mot de passe" class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white">
-      <button class="w-full py-3 bg-cyan-500 rounded-lg font-semibold">Se connecter</button>
-    </form>
-    <p class="text-center mt-4 text-gray-400">Pas de compte? <span onclick="showSection('register')" class="text-cyan-400 cursor-pointer">S'inscrire</span></p>
-  </div>
-  
-  <div id="register" class="section pt-20 container mx-auto px-4 py-12 max-w-md">
-    <h1 class="text-3xl font-bold text-center mb-8">Inscription</h1>
-    <form class="card p-6 rounded-xl space-y-4">
-      <input type="text" placeholder="Nom complet" class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white">
-      <input type="email" placeholder="Email" class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white">
-      <input type="tel" placeholder="Telephone" class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white">
-      <input type="password" placeholder="Mot de passe" class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white">
-      <button class="w-full py-3 bg-purple-500 rounded-lg font-semibold">Creer mon compte</button>
-    </form>
-  </div>
-  
-  <div id="tracking" class="section pt-20 container mx-auto px-4 py-12">
-    <h1 class="text-3xl font-bold text-center mb-8">Suivre Ma Commande</h1>
-    <div class="max-w-md mx-auto card p-6 rounded-xl">
-      <input type="text" placeholder="Numero de suivi" class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white mb-4">
-      <button class="w-full py-3 bg-cyan-500 rounded-lg font-semibold">Suivre</button>
-    </div>
-  </div>
-  
-  <div id="careers" class="section pt-20 container mx-auto px-4 py-12">
-    <h1 class="text-3xl font-bold text-center mb-4">Carrieres</h1>
-    <p class="text-center text-gray-400 mb-8">Rejoignez ELECTRON</p>
-    <div class="space-y-4 max-w-2xl mx-auto">
-      <div class="card p-4 rounded-xl flex justify-between items-center">
-        <div><h3 class="font-bold">Developpeur Web</h3><p class="text-gray-400 text-sm">Temps plein - Remote</p></div>
-        <button class="px-4 py-2 bg-cyan-500 rounded-lg">Postuler</button>
-      </div>
-      <div class="card p-4 rounded-xl flex justify-between items-center">
-        <div><h3 class="font-bold">Commercial</h3><p class="text-gray-400 text-sm">Temps plein - Cotonou</p></div>
-        <button class="px-4 py-2 bg-cyan-500 rounded-lg">Postuler</button>
-      </div>
-      <div class="card p-4 rounded-xl flex justify-between items-center">
-        <div><h3 class="font-bold">Support Client</h3><p class="text-gray-400 text-sm">Temps partiel - Remote</p></div>
-        <button class="px-4 py-2 bg-cyan-500 rounded-lg">Postuler</button>
-      </div>
-    </div>
-  </div>
-  
-  <div id="blog" class="section pt-20 container mx-auto px-4 py-12">
-    <h1 class="text-3xl font-bold text-center mb-8">Blog</h1>
-    <div class="space-y-4 max-w-2xl mx-auto">
-      <div class="card p-6 rounded-xl"><span class="text-sm text-cyan-400">E-commerce</span><h3 class="font-bold mt-2">Comment debuter en vente en ligne</h3><p class="text-gray-400 text-sm">25 Avril 2025</p></div>
-      <div class="card p-6 rounded-xl"><span class="text-sm text-cyan-400">IA</span><h3 class="font-bold mt-2">L'intelligence artificielle pour votre business</h3><p class="text-gray-400 text-sm">24 Avril 2025</p></div>
-      <div class="card p-6 rounded-xl"><span class="text-sm text-cyan-400">Logistique</span><h3 class="font-bold mt-2">Optimiser vos livraisons</h3><p class="text-gray-400 text-sm">23 Avril 2025</p></div>
-    </div>
-  </div>
-
-  <!-- CONTACT SECTION -->
-  <div id="contact" class="section pt-20 container mx-auto px-4 py-12">
-    <h1 class="text-3xl font-bold text-center mb-8">📞 Contact</h1>
-    <form class="max-w-md mx-auto card p-6 rounded-xl space-y-4">
-      <input type="text" placeholder="Nom" class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white">
-      <input type="email" placeholder="Email" class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white">
-      <textarea placeholder="Message" rows="4" class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white"></textarea>
-      <button class="w-full py-3 bg-cyan-500 rounded-lg font-semibold">Envoyer</button>
-    </form>
-  </div>
-
-  <!-- Footer -->
-  <footer class="text-center py-8 text-gray-500 border-t border-slate-800 mt-12">
-    <p>© 2025 ELECTRON Business Suite</p>
-  </footer>
-
-  <script>
-    function showSection(id) {
-      document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-      document.getElementById(id).classList.add('active');
-      window.scrollTo(0, 0);
-    }
-  </script>
+  <footer class="text-center p-8 text-gray-500">© 2025 ELECTRON Business Suite</footer>
 </body>
 </html>
-<!-- force redeploy -->
